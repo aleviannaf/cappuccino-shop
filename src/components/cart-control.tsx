@@ -24,7 +24,8 @@ export function CartControl() {
     return (
         <Container>
             <CartIcon />
-            {value.length > 0 && <CartCount>{value.length}</CartCount>}
+            {/* {value.length > 0 && <CartCount>{value.length}</CartCount>} */}
+            <CartCount>{2}</CartCount>
         </Container>
     )
 }

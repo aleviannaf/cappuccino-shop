@@ -8,7 +8,8 @@ import { CartControl } from "./cart-control"
 
 const sairaStencil = Saira_Stencil_One({
     weight: ['400'],
-    subsets: ['latin']
+    subsets: ['latin'],
+    display: 'swap'
 })
 
 
