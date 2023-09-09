@@ -4,7 +4,7 @@ import { FilterBar } from '@/components/filter-bar'
 import styles from './page.module.css'
 import { styled } from 'styled-components'
 import { ProductList } from '@/components/products-list'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
 
 const PageWrapper = styled.main`
   display: flex;
@@ -13,13 +13,10 @@ const PageWrapper = styled.main`
 `
 
 export default function Home() {
-const client = new QueryClient()
   return (
-    <QueryClientProvider client={client}>
-      <PageWrapper className={styles.main}>
-        <FilterBar />
-        <ProductList />
-      </PageWrapper>
-    </QueryClientProvider>
+    <PageWrapper className={styles.main}>
+      <FilterBar />
+      <ProductList />
+    </PageWrapper>
   )
 }
