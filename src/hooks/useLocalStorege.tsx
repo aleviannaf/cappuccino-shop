@@ -7,7 +7,7 @@ export function useLocalStorage<T>(item: string, initialValue: T){
         if (typeof window === 'undefined') return;
         let value = localStorage.getItem(item)
         if(value) setValue(JSON.parse(value))
-    }, [item])
+    }, [window])
 
     const updateLocalStorage = (newValue: T) => {
         setValue(newValue);
