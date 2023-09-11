@@ -3,9 +3,7 @@ import { ProductsFetchResponse } from "@/types/products-response";
 import { useQuery } from "@tanstack/react-query";
 import axios, { AxiosPromise } from "axios";
 import { useFilter } from "./useFilter";
-import { FilterType } from "@/types/filter-types";
-import { getCategoryByType, getFieldByPriority, mountQuery } from "@/utils/graphql-filters";
-import { PriorityTypes } from "@/types/priority-types";
+import {  mountQuery } from "@/utils/graphql-filters";
 import { useDeferredValue } from "react";
 
 
