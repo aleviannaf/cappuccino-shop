@@ -132,6 +132,8 @@ export default function Product({ searchParams }: { searchParams: { id: string }
             const newCart = [{ ...data, quantity: 1, id: searchParams.id }]
             localStorage.setItem('cart-items', JSON.stringify(newCart));
         }
+
+        window.location.href = '/cart'
     }
 
     console.log(data)
