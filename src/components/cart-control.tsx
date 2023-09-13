@@ -1,3 +1,5 @@
+"use client"
+
 import { useLocalStorage } from "@/hooks/useLocalStorege";
 import { CartIcon } from "./icons/cart-icon";
 import { styled } from "styled-components";
